@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WT Assignment 1</title>
+</head>
+<body>
+<h1 style="text-align: center">EXPERIMENT 1</h1>
+<p>
+<b> AIM:</b> Explore the functionality and uses of web browsers in Web Technology which is helpful in designing and debugging.</p>
+
+<p><b>REQUIREMENTS: </b>Google Chrome, Internet Connectivity</p>
+
+<h3> THEORY:</h3>
+<p>
+	Web development tools (often called devtools) allow web developers to test and debug their code. They are different from website builders and integrated development environments (IDEs) in that they do not assist in the direct creation of a webpage, rather they are tools used for testing the user interface of a website or web application. </p>
+<p>
+Web development tools come as browser add-ons or built-in features in web browsers. Most popular web browsers, such as Google Chrome, Firefox, Internet Explorer, Safari and Opera, have built-in tools to help web developers, and many additional add-ons can be found in their respective plugin download centres. </p>
+<p>
+Web development tools allow developers to work with a variety of web technologies, including HTML, CSS, DOM, JavaScript, and other components that are handled by the web browser. Due to increasing demand from web browsers to do more, popular web browsers have included more features geared for developers. </p>
+
+<h3> Chrome DevTools</h3>
+<p>
+	Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster. To open DevTools : 
+
+	<ul>
+		<li>Right-click an element on the page and select Inspect. </li>
+		<li>ress Command+Option+C (Mac) or Control+Shift+C (Windows, Linux, Chrome OS).</li>
+	</ul>
+
+<h3>Features of Chrome DevTools:</h3>
+<ol>
+	<li><b> Device Mode</b></li>
+	<p>
+		Use Device Mode to approximate how your page looks and performs on a mobile device. Device Mode is the name for the loose collection of features in Chrome DevTools that help you simulate mobile devices. These features include: 
+		<ul>
+			<li>Simulating a mobile viewport</li>
+			<li>Throttling the network</li>
+			<li>Throttling the CPU</li>
+			<li>Simulating geolocation </li>
+			<li>Setting orientation </li>
+		</ul>
+	</p>
+	<b>Limitations:</b> There are some aspects of mobile devices that DevTools will never be able to simulate. For example, the architecture of mobile CPUs is very different from the architecture of laptop or desktop CPUs.
+	<center>
+		<figure>
+			<img src="kapil_device_mode.png" height="500" width="700">
+			<figcaption>Fig 1: Using Device Mode to test Responsiveness</figcaption>
+	</figure>
+	</center>
+
+	<li><b> Console</b></li>
+	<p>
+		The Console has 2 main uses: viewing logged messages and running JavaScript.
+
+		<ul>
+			<li>Viewing logged messages</li>
+			<p style="text-indent: 30px"> Web developers often log messages to the Console to make sure that their JavaScript is working as expected. To log a message, you insert an expression like console.log('Hello, Console!') into your JavaScript. When the browser executes your JavaScript and sees an expression like that, it knows that it's supposed to log the message to the Console. 
+			</p>
+			<li>Running Javascript</li>
+			<p style="text-indent: 30px"> You can run JavaScript in the Console to interact with the page that you're inspecting. 
+				<center>
+					<figure>
+						<img src="javascript_changes.png">
+						<figcaption>Fig 2: Changes made by javascript reflected on the document.</figcaption>
+					</figure>
+				</center>
+			</p>
+		</ul>
+	</p>
+
+	<li><b>Inspect Network Activity In Chrome DevTools </b></li>
+	<p>
+		In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected. The most common use cases for the Network panel are:
+		<ul>
+			<li>Making sure that resources are actually being uploaded or downloaded at all.</li>
+			<li>Inspecting the properties of an individual resource, such as its HTTP headers, content, size, and so on.</li>
+		</ul>
+		Steps to open network panel -
+		<ol>
+			<li>Open DevTools by pressing Control+Shift+J or Command+Option+J (Mac). The <strong>Console</strong> panel opens.</li>
+			<li>Click the <strong>Network</strong> tab. The Network panel opens.</li>
+		</ol>
+		Each row of the <strong>Network Log</strong> represents a resource. By default the resources are listed chronologically.
+		<center>
+			<figure>
+				<img src="network_log.png">
+				<figcaption>Fig 3: The Network log</figcaption>
+			</figure>
+		</center>
+		Each column represents information about a resource. Fig 3 shows the default columns:
+		<ul>
+			<li><strong>Status</strong> The HTTP response code</li>
+			<li><strong>Type</strong> The resource type</li>
+			<li><strong>Initiator</strong> What caused a resource to be requested. Clicking a link in the Initiator column takes you to the source code that caused the request.</li>
+			<li><strong>Time</strong> How long the request took.</li>
+			<li><strong>Waterfall</strong> A graphical representation of the different stages of the request. Hover over a Waterfall to see a breakdown.</li>
+		</ul>
+		<p>Additionally, it also shows the total DOMContentLoaded time and Load time of the website. It also allows simulating low bandwidth network connections to test the performance of a website.</p>
+	</p>
+</ol>
+<h3>CONCLUSION</h3>
+Features of Web Debugger Tools were explored, studied and tested on <a href="https://github.com/devkapilbansal">https://github.com/devkapilbansal</a> website.
+</body>
+</html>
